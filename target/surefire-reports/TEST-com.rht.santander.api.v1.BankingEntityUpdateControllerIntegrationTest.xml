@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="4.364" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Trabajo\W\master\crud-banking\target\test-classes;C:\Trabajo\W\master\crud-banking\target\classes;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.5.3\spring-boot-starter-data-jpa-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter\3.5.3\spring-boot-starter-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot\3.5.3\spring-boot-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.3\spring-boot-autoconfigure-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-logging\3.5.3\spring-boot-starter-logging-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.3\spring-boot-starter-jdbc-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-jdbc\6.2.8\spring-jdbc-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\hibernate\orm\hibernate-core\6.6.18.Final\hibernate-core-6.6.18.Final.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\data\spring-data-jpa\3.5.1\spring-data-jpa-3.5.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\data\spring-data-commons\3.5.1\spring-data-commons-3.5.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-orm\6.2.8\spring-orm-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-context\6.2.8\spring-context-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-aop\6.2.8\spring-aop-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-tx\6.2.8\spring-tx-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-beans\6.2.8\spring-beans-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-aspects\6.2.8\spring-aspects-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\aspectj\aspectjweaver\1.9.24\aspectjweaver-1.9.24.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-web\3.5.3\spring-boot-starter-web-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-json\3.5.3\spring-boot-starter-json-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-databind\2.19.1\jackson-databind-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.1\jackson-annotations-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-core\2.19.1\jackson-core-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.19.1\jackson-datatype-jdk8-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.19.1\jackson-datatype-jsr310-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.19.1\jackson-module-parameter-names-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.3\spring-boot-starter-tomcat-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.42\tomcat-embed-core-10.1.42.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.42\tomcat-embed-websocket-10.1.42.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-web\6.2.8\spring-web-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\io\micrometer\micrometer-observation\1.15.1\micrometer-observation-1.15.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\io\micrometer\micrometer-commons\1.15.1\micrometer-commons-1.15.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-webmvc\6.2.8\spring-webmvc-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-expression\6.2.8\spring-expression-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-validation\3.5.3\spring-boot-starter-validation-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.42\tomcat-embed-el-10.1.42.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\hibernate\validator\hibernate-validator\8.0.2.Final\hibernate-validator-8.0.2.Final.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\projectlombok\lombok\1.18.38\lombok-1.18.38.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-test\3.5.3\spring-boot-starter-test-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-test\3.5.3\spring-boot-test-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.3\spring-boot-test-autoconfigure-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\assertj\assertj-core\3.27.3\assertj-core-3.27.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\net\bytebuddy\byte-buddy-agent\1.17.6\byte-buddy-agent-1.17.6.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-core\6.2.8\spring-core-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-jcl\6.2.8\spring-jcl-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-test\6.2.8\spring-test-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\xmlunit\xmlunit-core\2.10.2\xmlunit-core-2.10.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\io\swagger\core\v3\swagger-annotations\2.1.6\swagger-annotations-2.1.6.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="user.country.format" value="AR"/>
+    <property name="classifier" value="sources"/>
+    <property name="downloadSources" value="true"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="APPLICATION_NAME" value="CrudBanking"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Trabajo\swdtools\jdk-17.0.12\bin"/>
+    <property name="sun.java.command" value="C:\Users\LP\AppData\Local\Temp\surefire15733081619250970159\surefirebooter-20250828113742181_3.jar C:\Users\LP\AppData\Local\Temp\surefire15733081619250970159 2025-08-28T11-37-41_444-jvmRun1 surefire-20250828113742181_1tmp surefire_0-20250828113742181_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Trabajo\W\master\crud-banking\target\test-classes;C:\Trabajo\W\master\crud-banking\target\classes;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.5.3\spring-boot-starter-data-jpa-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter\3.5.3\spring-boot-starter-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot\3.5.3\spring-boot-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.3\spring-boot-autoconfigure-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-logging\3.5.3\spring-boot-starter-logging-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.3\spring-boot-starter-jdbc-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-jdbc\6.2.8\spring-jdbc-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\hibernate\orm\hibernate-core\6.6.18.Final\hibernate-core-6.6.18.Final.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\data\spring-data-jpa\3.5.1\spring-data-jpa-3.5.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\data\spring-data-commons\3.5.1\spring-data-commons-3.5.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-orm\6.2.8\spring-orm-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-context\6.2.8\spring-context-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-aop\6.2.8\spring-aop-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-tx\6.2.8\spring-tx-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-beans\6.2.8\spring-beans-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-aspects\6.2.8\spring-aspects-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\aspectj\aspectjweaver\1.9.24\aspectjweaver-1.9.24.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-web\3.5.3\spring-boot-starter-web-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-json\3.5.3\spring-boot-starter-json-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-databind\2.19.1\jackson-databind-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.1\jackson-annotations-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-core\2.19.1\jackson-core-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.19.1\jackson-datatype-jdk8-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.19.1\jackson-datatype-jsr310-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.19.1\jackson-module-parameter-names-2.19.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.3\spring-boot-starter-tomcat-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.42\tomcat-embed-core-10.1.42.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.42\tomcat-embed-websocket-10.1.42.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-web\6.2.8\spring-web-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\io\micrometer\micrometer-observation\1.15.1\micrometer-observation-1.15.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\io\micrometer\micrometer-commons\1.15.1\micrometer-commons-1.15.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-webmvc\6.2.8\spring-webmvc-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-expression\6.2.8\spring-expression-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-validation\3.5.3\spring-boot-starter-validation-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.42\tomcat-embed-el-10.1.42.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\hibernate\validator\hibernate-validator\8.0.2.Final\hibernate-validator-8.0.2.Final.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\projectlombok\lombok\1.18.38\lombok-1.18.38.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-test\3.5.3\spring-boot-starter-test-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-test\3.5.3\spring-boot-test-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.3\spring-boot-test-autoconfigure-3.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\assertj\assertj-core\3.27.3\assertj-core-3.27.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\net\bytebuddy\byte-buddy-agent\1.17.6\byte-buddy-agent-1.17.6.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-core\6.2.8\spring-core-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-jcl\6.2.8\spring-jcl-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\springframework\spring-test\6.2.8\spring-test-6.2.8.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\org\xmlunit\xmlunit-core\2.10.2\xmlunit-core-2.10.2.jar;C:\Trabajo\swdtools\apache-maven-3.9.9\repository\io\swagger\core\v3\swagger-annotations\2.1.6\swagger-annotations-2.1.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\LP"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Trabajo\swdtools\jdk-17.0.12"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Trabajo\W\master\crud-banking"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\LP\AppData\Local\Temp\surefire15733081619250970159\surefirebooter-20250828113742181_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="LP"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Trabajo\swdtools\apache-maven-3.9.9\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\LP\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="2"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Trabajo\W\master\crud-banking"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="9588"/>
+    <property name="user.language.format" value="es"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Trabajo\swdtools\jdk-17.0.12\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;&quot;;&quot;;&quot;;&quot;;&quot;;&quot;;&quot;;&quot;;&quot;;&quot;;&quot;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Trabajo\swdtools\Git-2.49.0\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\LP\AppData\Local\Microsoft\WindowsApps;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[CrudBanking] "/>
+  </properties>
+  <testcase name="deleteWithQuery_shouldReturnOk_whenRestTemplateReturnsRequest" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.287">
+    <system-out><![CDATA[2025-08-28T11:37:57.978-03:00  INFO 9588 --- [CrudBanking] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest]: BankingEntityUpdateControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-28T11:37:58.012-03:00  INFO 9588 --- [CrudBanking] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.rht.santander.BankingApplication for test class com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-08-28T11:37:58.176-03:00  INFO 9588 --- [CrudBanking] [           main] ingEntityUpdateControllerIntegrationTest : Starting BankingEntityUpdateControllerIntegrationTest using Java 17.0.12 with PID 9588 (started by LP in C:\Trabajo\W\master\crud-banking)
+2025-08-28T11:37:58.176-03:00  INFO 9588 --- [CrudBanking] [           main] ingEntityUpdateControllerIntegrationTest : The following 1 profile is active: "test"
+2025-08-28T11:37:58.961-03:00  INFO 9588 --- [CrudBanking] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T11:37:59.016-03:00  INFO 9588 --- [CrudBanking] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2025-08-28T11:38:00.131-03:00  INFO 9588 --- [CrudBanking] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T11:38:00.148-03:00  INFO 9588 --- [CrudBanking] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T11:38:00.202-03:00  INFO 9588 --- [CrudBanking] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T11:38:00.208-03:00  INFO 9588 --- [CrudBanking] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-28T11:38:00.211-03:00  INFO 9588 --- [CrudBanking] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:inventory user=INVUSER
+2025-08-28T11:38:00.213-03:00  INFO 9588 --- [CrudBanking] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-28T11:38:00.214-03:00  WARN 9588 --- [CrudBanking] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T11:38:00.215-03:00  INFO 9588 --- [CrudBanking] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-28T11:38:00.326-03:00  INFO 9588 --- [CrudBanking] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T11:38:00.332-03:00  INFO 9588 --- [CrudBanking] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T11:38:00.568-03:00  WARN 9588 --- [CrudBanking] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T11:38:01.086-03:00  INFO 9588 --- [CrudBanking] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-28T11:38:01.086-03:00  INFO 9588 --- [CrudBanking] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-28T11:38:01.088-03:00  INFO 9588 --- [CrudBanking] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-08-28T11:38:01.117-03:00  INFO 9588 --- [CrudBanking] [           main] ingEntityUpdateControllerIntegrationTest : Started BankingEntityUpdateControllerIntegrationTest in 3.095 seconds (process running for 18.711)
+2025-08-28T11:38:01.154-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Start
+2025-08-28T11:38:01.167-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Exit: COMPLETED 13 ms.-
+2025-08-28T11:38:01.228-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteWithQueryRequest: 150
+2025-08-28T11:38:01.231-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : delete Start
+2025-08-28T11:38:01.259-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : delete Exit: COMPLETED 30 ms.-
+2025-08-28T11:38:01.270-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteWithQueryExecution time: 44 ms.-
+]]></system-out>
+  </testcase>
+  <testcase name="updateBankingEntity_shouldReturnOk_whenBankingEntityExists" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.525">
+    <system-out><![CDATA[2025-08-28T11:38:01.437-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Start
+2025-08-28T11:38:01.443-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Exit: COMPLETED 6 ms.-
+2025-08-28T11:38:01.666-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : updateBankingEntityRequest: BankingEntityRequest(traceId=null, code=150, name=MODIFICADO, type=Banco, streetName=calle, buildingNumber=123, city=CABA, province=CABA, zipCode=1234, phoneNumber=4321-1234)
+2025-08-28T11:38:01.668-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : update Start
+2025-08-28T11:38:01.699-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : update Exit: COMPLETED 32 ms.-
+2025-08-28T11:38:01.700-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : updateBankingEntityResponse: BankingEntityResponse(traceId=null, result=OK, cod=0000, msj=COMPLETED SUCCESFULLY)
+2025-08-28T11:38:01.702-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : updateBankingEntityExecution time: 37 ms.-
+]]></system-out>
+  </testcase>
+  <testcase name="deleteWithQuery_shouldThrowTechnicalException_whenRestTemplateReturnsNull" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.051">
+    <system-out><![CDATA[2025-08-28T11:38:01.957-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteWithQueryRequest: 150
+2025-08-28T11:38:01.957-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteWithQueryExecution time: 0 ms.-
+2025-08-28T11:38:01.976-03:00 ERROR 9588 --- [CrudBanking] [           main] c.r.s.exception.GlobalExceptionHandler   : EXECUTION ERROR
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.http.ResponseEntity.getStatusCode()" because "request" is null
+	at com.rht.santander.api.v1.BankingEntityUpdateController.deleteWithQuery(BankingEntityUpdateController.java:145) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.8.jar:6.2.8]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.8.jar:6.2.8]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.8.jar:6.2.8]
+	at com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest.deleteWithQuery_shouldThrowTechnicalException_whenRestTemplateReturnsNull(BankingEntityUpdateControllerIntegrationTest.java:198) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775) ~[junit-platform-commons-1.12.2.jar:1.12.2]
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479) ~[junit-platform-commons-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.3.jar:3.5.3]
+
+]]></system-out>
+  </testcase>
+  <testcase name="updateBankingEntity_shouldThrowNotValidException_whenBankingEntityNotFound" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.029">
+    <system-out><![CDATA[2025-08-28T11:38:02.021-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : updateBankingEntityRequest: BankingEntityRequest(traceId=null, code=150, name=HSBC, type=Banco, streetName=calle, buildingNumber=123, city=CABA, province=CABA, zipCode=1234, phoneNumber=4321-1234)
+2025-08-28T11:38:02.022-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : update Start
+2025-08-28T11:38:02.026-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : updateBankingEntityExecution time: 4 ms.-
+2025-08-28T11:38:02.028-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.exception.GlobalExceptionHandler   : handleNotValidExceptionException validating request : Entity with code 150 not found
+]]></system-out>
+  </testcase>
+  <testcase name="processBankingEntity_shouldReturnOk_whenNewBankingEntity" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.043">
+    <system-out><![CDATA[2025-08-28T11:38:02.057-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : processBankingEntityRequest: BankingEntityRequest(traceId=null, code=150, name=HSBC, type=Banco, streetName=calle, buildingNumber=123, city=CABA, province=CABA, zipCode=1234, phoneNumber=4321-1234)
+2025-08-28T11:38:02.057-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Start
+2025-08-28T11:38:02.073-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Exit: COMPLETED 16 ms.-
+2025-08-28T11:38:02.075-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : processBankingEntityResponse: BankingEntityResponse(traceId=null, result=OK, cod=0000, msj=COMPLETED SUCCESFULLY)
+2025-08-28T11:38:02.077-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : processBankingEntityExecution time: 21 ms.-
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteWithQuery_shouldThrowNotFound_whenRestTemplateReturnsNotFound" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.043">
+    <system-out><![CDATA[2025-08-28T11:38:02.110-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteWithQueryRequest: 150
+2025-08-28T11:38:02.111-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteWithQueryExecution time: 1 ms.-
+2025-08-28T11:38:02.114-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.exception.GlobalExceptionHandler   : handleNoSuchElementExceptionException validating request : Entity with code 150 not found
+]]></system-out>
+  </testcase>
+  <testcase name="processBankingEntity_shouldThrowNotValidException_whenBankingEntityExists" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.032">
+    <system-out><![CDATA[2025-08-28T11:38:02.147-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Start
+2025-08-28T11:38:02.152-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Exit: COMPLETED 5 ms.-
+2025-08-28T11:38:02.155-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : processBankingEntityRequest: BankingEntityRequest(traceId=null, code=150, name=HSBC, type=Banco, streetName=calle, buildingNumber=123, city=CABA, province=CABA, zipCode=1234, phoneNumber=4321-1234)
+2025-08-28T11:38:02.155-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Start
+2025-08-28T11:38:02.159-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : processBankingEntityExecution time: 4 ms.-
+2025-08-28T11:38:02.161-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.exception.GlobalExceptionHandler   : handleNotValidExceptionException validating request : Entity with code 150 alredy exists
+]]></system-out>
+  </testcase>
+  <testcase name="deleteBankingEntity_shouldThrowNotValidException_whenBankingEntityNotFound" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.046">
+    <system-out><![CDATA[2025-08-28T11:38:02.195-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteBankingEntityRequest: 150
+2025-08-28T11:38:02.196-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : delete Start
+2025-08-28T11:38:02.208-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteBankingEntityExecution time: 13 ms.-
+2025-08-28T11:38:02.210-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.exception.GlobalExceptionHandler   : handleNotValidExceptionException validating request : Entity with code 150 not found
+]]></system-out>
+  </testcase>
+  <testcase name="deleteBankingEntity_shouldReturnOk_whenBankingEntityExists" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.041">
+    <system-out><![CDATA[2025-08-28T11:38:02.246-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Start
+2025-08-28T11:38:02.251-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : save Exit: COMPLETED 5 ms.-
+2025-08-28T11:38:02.253-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteBankingEntityRequest: 150
+2025-08-28T11:38:02.254-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : delete Start
+2025-08-28T11:38:02.260-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.s.impl.BankingEntityServiceImpl    : delete Exit: COMPLETED 6 ms.-
+2025-08-28T11:38:02.262-03:00  INFO 9588 --- [CrudBanking] [           main] c.r.s.a.v.BankingEntityUpdateController  : deleteBankingEntityExecution time: 9 ms.-
+]]></system-out>
+  </testcase>
+  <testcase name="processBankingEntity_shouldThrowMethodArgumentNotValidException_whenRequestInvalid" classname="com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest" time="0.052">
+    <system-out><![CDATA[2025-08-28T11:38:02.304-03:00 ERROR 9588 --- [CrudBanking] [           main] c.r.s.exception.GlobalExceptionHandler   : EXECUTION ERROR
+
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.rht.santander.model.BankingEntityResponse> com.rht.santander.api.v1.BankingEntityUpdateController.processBankingEntity(com.rht.santander.model.BankingEntityRequest) throws com.rht.santander.exception.NotValidException: [Field error in object 'bankingEntityRequest' on field 'name': rejected value [null]; codes [NotEmpty.bankingEntityRequest.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bankingEntityRequest.name,name]; arguments []; default message [name]]; default message [A field is null]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:159) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.8.jar:6.2.8]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.8.jar:6.2.8]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.8.jar:6.2.8]
+	at com.rht.santander.api.v1.BankingEntityUpdateControllerIntegrationTest.processBankingEntity_shouldThrowMethodArgumentNotValidException_whenRequestInvalid(BankingEntityUpdateControllerIntegrationTest.java:120) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775) ~[junit-platform-commons-1.12.2.jar:1.12.2]
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479) ~[junit-platform-commons-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.3.jar:3.5.3]
+
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,7 @@
+com\rht\santander\api\v1\BankingEntityUpdateControllerTest.class
+com\rht\santander\service\BankingEntityServiceTest.class
+com\rht\santander\api\v1\BankingEntityUpdateControllerIntegrationTest.class
+com\rht\santander\service\BankingEntityServiceIntegrationTest.class
+com\rht\santander\BankingApplicationTests.class
+com\rht\santander\api\v1\BankingEntityQueryControllerIntegrationTest.class
+com\rht\santander\api\v1\BankingEntityQueryControllerTest.class
